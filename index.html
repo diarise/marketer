@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Online Marketing - Your Affiliate Platform</title>
+    <meta name="description" content="Elevate your digital presence with Luna Online Marketing. Join our platform for innovative digital marketing strategies, industry connections, and brand possibilities.">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Midnight Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #34495e; /* Wet Asphalt */
+    border-bottom: 1px solid #2c3e50;
+}
+
+nav a {
+    color: #ecf0f1; /* Clouds */
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #3498db; /* Belize Hole */
+}
+
+/* Call-to-Action Button Styles */
+.cta-button {
+    background-color: #3498db; /* Belize Hole */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #2980b9; /* Belize Hole - Darker */
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+    position: relative; /* Add this to make positioning within the container */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image/hero-2.png') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    margin-bottom: 30px;
+    height: 80vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* Ensure the background image covers the container */
+}
+
+
+.hero-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-banner a.btn-primary {
+    background-color: #fff;
+    color: #3498db; /* Belize Hole */
+    border: 2px solid #fff;
+}
+
+.hero-banner a.btn-primary:hover {
+    background-color: #3498db; /* Belize Hole */
+    color: #fff;
+}
+
+/* Scroll Button Styles */
+.scroll-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/* Section Alignment Styles */
+.section {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.section-image,
+.section-text {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-text {
+    padding: 0 50px;
+}
+
+/* Section Title Styles */
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section Description Styles */
+.section-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Learn More Button Styles */
+.learn-more-button {
+    background-color: #3498db; /* Belize Hole */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.learn-more-button:hover {
+    background-color: #2980b9; /* Belize Hole - Darker */
+}
+
+/* Merchants Section Styles */
+.merchants-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Merchant Logo Styles */
+.merchant-logo {
+    width: 100px; /* Adjust the size as needed */
+    margin: 20px;
+}
+
+/* Registration Section Styles */
+.registration-section {
+    padding: 100px 0;
+}
+
+/* Registration Form Styles */
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Form Control Styles */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Primary Button Styles */
+.btn-primary {
+    background-color: #3498db; /* Belize Hole */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Belize Hole - Darker */
+}
+
+/* Footer Input Group Styles */
+footer .input-group-append button {
+    height: 38px; /* Adjust the height as needed */
+}
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Social Icon Styles */
+.social-icon {
+    font-size: 24px;
+    color: #fff; /* Change to white */
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #3498db; /* Change the color on hover as needed */
+}
+
+/* Scroll Button Styles */
+.scroll-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.scroll-btn:hover {
+    color: #3498db; /* Belize Hole */
+}
+
+/* Additional Styles for New Sections */
+.testimonials-section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+}
+
+.features-section {
+    padding: 100px 0;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.how-it-works-section {
+    padding: 100px 0;
+}
+
+.step {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-section {
+    padding: 100px 0;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+}
+
+.faq-section {
+    padding: 100px 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+
+    </style>
+        <!-- JavaScript Scripts -->
+
+
+
+</head>
+<body>
+
+<!-- Updated Header -->
+<header class="hero-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="hero-title">Boost Your Digital Presence with Luna Online Marketing</h1>
+                <p class="hero-subtitle">Join our digital marketing platform and explore innovative strategies, connect with leading professionals, and unlock new possibilities for your brand.</p>
+                <a href="#work-with-us" class="btn btn-primary btn-lg scroll">Get Started</a>
+            </div>
+            <div class="col-md-6">
+                <img src="image/m3.jpg" alt="Header Image" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Updated Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Luna Online Marketing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#solutions">Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#industry">Industry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll" href="#merchants">Merchants</a>
+                </li>
+            </ul>
+        </div>
+        <a class="cta-button scroll" href="#work-with-us">Work with Us</a>
+    </div>
+</nav>
+
+<!-- Updated Hero Banner -->
+<section id="home" class="hero-banner">
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col-md-8 mx-auto">
+                <h1 class="display-3 mb-4">Elevate Your Online Presence with Luna Online Marketing</h1>
+                <!-- <p class="lead mb-4">Join our digital marketing community, explore cutting-edge strategies, engage with industry experts, and unleash new opportunities for your brand.</p> -->
+                <a href="#work-with-us" class="btn btn-lg btn-primary scroll">Start Your Journey</a>
+            </div>
+        </div>
+        <a href="#work-with-us" class="scroll-btn">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>
+</section>
+
+
+
+<!-- Digital Solutions Section -->
+<section id="solutions" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-image">
+                <img src="image/m1.jpg" alt="Digital Marketing Solutions Image">
+            </div>
+            <div class="col-md-6 section-text">
+                <h2 class="section-title">Revolutionize Your Digital Strategy with Luna Online Marketing</h2>
+                <p class="section-description">
+                    Elevate your digital presence with Luna Marketing. Our innovative solutions are crafted to amplify your online strategy and drive meaningful results. From cutting-edge analytics to targeted campaigns, we're here to optimize every aspect of your digital journey.
+                </p>
+                <a href="#" class="learn-more-button">Explore Solutions</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Industry Empowerment Section -->
+<section id="industry" class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-text">
+                <h2 class="section-title">Empowering Diverse Industries</h2>
+                <p class="section-description">
+                    At Luna Marketing, we specialize in empowering a variety of industries by providing tailored digital solutions. Our strategic approach ensures that your business, regardless of its sector, can thrive in the digital landscape.                </p>
+                <a href="#" class="learn-more-button">Discover Our Impact</a>
+            </div>
+            <div class="col-md-6 section-image">
+                <img src="image/m2.jpg" alt="Industry Empowerment Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Us Section -->
+<section id="about-us" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section-image">
+                <img src="image/m4.jpg" alt="About Us Image">
+            </div>
+            <div class="col-md-6 section-text">
+                <h2 class="section-title">Discover Our Story</h2>
+                <p class="section-description">
+                    Luna Marketing is more than a digital marketing platform; we are a team of passionate professionals dedicated to shaping the future of digital engagement. Our journey involves helping businesses like yours thrive in the ever-evolving online landscape.                </p>
+                <a href="#" class="learn-more-button">Explore Our Values</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Updated Key Features Section with Cards and Background Color -->
+<section id="features" class="features-section" style="background-color: #2c3e50; color: #fff; padding: 80px 0;">
+    <div class="container">
+        <h2 class="section-title text-center mb-4" style="color: #fff;">Unlock the Power of Luna Marketing</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-pencil-alt fa-3x mb-3" style="color: #2c3e50;"></i>
+                        <h3 class="card-title text-white">Content Creation</h3>
+                        <p class="card-text text-dark">Elevate your digital presence with our robust content creation tools. Craft compelling and engaging content to captivate your audience and drive results.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-handshake fa-3x mb-3" style="color: #2c3e50;"></i>
+                        <h3 class="card-title text-white">Strategic Partnerships</h3>
+                        <p class="card-text text-dark">Forge powerful partnerships with industry-leading merchants. Boost your earnings and establish lasting connections in the dynamic digital landscape.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cogs fa-3x mb-3" style="color: #2c3e50;"></i>
+                        <h3 class="card-title text-white">Customization</h3>
+                        <p class="card-text text-dark">Tailor your affiliate platform to reflect your unique brand identity and preferences. Our platform offers flexibility and personalization to meet your specific needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Updated FAQ Section -->
+<!-- Updated FAQ Section with Styling -->
+<!-- Updated FAQ Section with Content for Digital Marketers -->
+<section id="faq" class="faq-section">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="faq-item">
+                <div class="card">
+                    <div class="card-header" id="faqHeading1" style="background-color: #2c3e50;">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1" style="color: #fff;">
+                                How can Luna Online Marketing help boost my digital presence?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Luna Marketing provides innovative tools and strategies to elevate your digital presence. Our content creation, strategic partnerships, and customization options empower you to craft compelling campaigns and connect with your audience effectively.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="card">
+                    <div class="card-header" id="faqHeading2" style="background-color: #2c3e50;">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2" style="color: #fff;">
+                                How can I establish strategic partnerships through Luna Marketing?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Luna Online Marketing facilitates the creation of strong partnerships with industry-leading merchants. By leveraging our platform, you can boost your earnings and establish lasting connections in the dynamic digital landscape.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="card">
+                    <div class="card-header" id="faqHeading3" style="background-color: #2c3e50;">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3" style="color: #fff;">
+                                How customizable is the Luna Marketing platform for my brand?
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Luna Online Marketing offers extensive customization options, allowing you to tailor the affiliate platform to reflect your unique brand identity and preferences. Our platform provides flexibility and personalization to meet your specific needs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Updated Merchants Section -->
+<section id="merchants" class="merchants-section">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Our Trusted Merchants</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="merchant-logo">
+                    <img src="image/Amazon.png" alt="Amazon Logo" style="width: 100px;">
+                </div>
+            </div>
+            <!-- <div class="col-md-3">
+                <div class="merchant-logo">
+                    <img src="image/" alt="Fullstaq Logo" style="width: 100px;">
+                </div>
+            </div> -->
+            <div class="col-md-3">
+                <div class="merchant-logo">
+                    <img src="image/Virgin_Voyages_logo.svg.png" alt="Virgin Voyages Logo" style="width: 100px;">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="merchant-logo">
+                    <img src="image/Viator-Logo.png" alt="Viator Logo" style="width: 100px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="work-with-us" class="section registration-section" style="background-color: #34495e;">
+    <div class="container">
+        <h2 class="mt-4 mb-4" style="color: #fff; text-align: center;">Work with Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="registrationForm" class="registration-form needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="John Doe">
+                            
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="john@example.com" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Your Phone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="(123) 567-8901">
+                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="reason" class="form-label">Why do you want to work with us?</label>
+                        <textarea class="form-control" id="reason" name="reason" rows="4" placeholder="Enter your reasons here" ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Join Us</button>
+                </form>
+                <div id="thankYouMessage" class="mt-3 text-center" style="display: none;">
+    <p id="thankYouText" style="color: #fff;">Thank you for your submission! We'll be in touch soon.</p>
+</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+    
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@lunaonlinemarketing.com</p>
+                    <p>Phone: +1 (951) 394-2595</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        
+
+                        <!-- Add more social media icons as needed -->
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-4">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <form id="newsletterForm" class="needs-validation" novalidate>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email"
+                                aria-describedby="subscribe-btn" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit" id="subscribe-btn">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3" style="background-color: #2c3e50;">
+            <p>&copy; 2021 Luna Online Marketing. All rights reserved.</p>
+        </div>
+    </footer>
+       
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add this script before the closing </body> tag -->
+
+ 
+
+
+<script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('.scroll').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+<!-- Add this revised script block after the previous script block in your HTML file -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Add an event listener for the form submission
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Perform AJAX request to submit the form data
+            var formData = new FormData(this);
+
+            fetch('submit_form.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display thank you message or handle success as needed
+                document.getElementById('registrationForm').style.display = 'none';
+                document.getElementById('thankYouText').innerText = 'Thank you, ' + data.name + '! We appreciate your submission. We\'ll be in touch soon.';
+                document.getElementById('thankYouMessage').style.display = 'block';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
